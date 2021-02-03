@@ -1,0 +1,194 @@
+/* reset browser styles */
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'montserrat', sans-serif;
+}
+
+/* temp background */
+
+body {
+  background-image: url(https://www.xmple.com/wallpaper/grey-white-green-stripes-lines-streaks-1920x1080-c3-3cb371-2f4f4f-ffffff-l3-71-71-71-a-135-f-1.svg);
+}
+
+/* temp background */
+
+
+
+
+
+
+
+
+
+
+
+
+/* navbar */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px) contrast(20%) brightness(145%);
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.50);
+  min-height: 8vh;
+}
+
+.logo {
+  color: #707070;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #707070;
+  letter-spacing: 3px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.fa-phone {
+  font-size: 1.5rem;
+  color: #83BC00;
+}
+
+/* navbar above */
+
+/* hamburger menu icon large device */
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 29px;
+  height: 4px;
+  background-color: #707070;
+  margin: 4px;
+  transition: all 0.3s ease-in;
+}
+
+
+/* hamburger menu icon above large device */
+
+.mobile-menu {
+  display: none;
+}
+
+/* navbar mobile */
+
+@media screen and (max-width:800px) {
+  
+  /* hides the menu that slides from the right */
+  body {
+    overflow-X: hidden;
+  }
+  /* hides the menu that slides from the right above */
+
+  /* mobile menu background */
+  .mobile-menu {
+    display:flex;
+    position: absolute;
+    height: 100vh;
+    right: 0px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px) contrast(20%) brightness(145%);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.50);
+    transform: translateY(-120%);
+    transition: transform 0.4s ease-in;
+  }
+
+  /* mobile menu links */
+  .nav-links {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    top: 8vh;
+    height: 92vh;
+    right: 0px;
+    width: 100vw;
+    padding: 20vh;
+    transform: translateY(-120%);
+    transition: transform 0.5s ease-in;
+   }
+
+   .nav-links li {
+     opacity: 0;
+   }
+
+   .burger {
+     display: block;
+   }
+
+   .fa-phone {
+    padding-top: 80%;
+    font-size: 1.8rem;
+  }
+
+}
+
+/* for app.js use to open the menu */
+.nav-active {
+  transform: translateY(0%);
+}
+/* for app.js use to open the menu above*/
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.toggleX .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggleX .line2{
+  opacity: 0;
+}
+
+.toggleX .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
+/* nav bar above */
+
+/* footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
