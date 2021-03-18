@@ -5,7 +5,6 @@ const navSlide = () => {
     const nav2 = document.querySelector('.mobile-menu');
     const navLinks = document.querySelectorAll('.nav-links li');
 
-
     burger.addEventListener('click', () => {
         // Toggle Nav Hamburger Slide
         nav1.classList.toggle('nav-active');
@@ -21,9 +20,7 @@ const navSlide = () => {
         });
         //Burger X Animation
         burger.classList.toggle('toggleX');
-
     });
-
 }
 
 navSlide();
@@ -44,7 +41,7 @@ window.onscroll = function() {
 $(document).ready(() => {
   $('.services-carousel .slick').slick({
       autoplay:true,
-      dots: true,
+      dots: false,
       speed: 1000,
       slidesToShow: 2,
       slidesToScroll: 2,
@@ -53,7 +50,7 @@ $(document).ready(() => {
       centerMode: true,
       responsive: [
           {
-              breakpoint: 650,
+              breakpoint: 700,
               settings: {
                   dots: false,
                   slidesToShow: 1,
@@ -68,7 +65,7 @@ $(document).ready(() => {
 $(document).ready(() => {
   $('.quotes-carousel .slick').slick({
       autoplay:true,
-      dots: true,
+      dots: false,
       speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -183,7 +180,7 @@ function gridGallery(a) {
     selector.style.setProperty("--column-width", a.columnWidth + "px");
   }
 }
-
 // Gallery above
+
 
 

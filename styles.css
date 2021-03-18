@@ -22,7 +22,7 @@ ul, li, ol {
   }
 body, a {
     color: #707070;
-    font-size: 17px;
+    font-size: 15px;
   }
 /* Reset styles above */
 /* Home container */
@@ -35,7 +35,7 @@ body, a {
 /* Site Wide settings */
 /* Font family */
 body {
-  font-family: "montserrat", sans-serif;
+  font-family: "Segoe UI", 'Roboto', "montserrat", sans-serif;
 }
 /* Font family above */
 /* Font colors */
@@ -49,20 +49,18 @@ body {
   color:#F3733D
 }
 /* Font colors above */
-/* Dots colour for slider */
-.green .slick-dots li button:before {
-  font-size: 10px;
-  color:#83bc00;
+/* Current page */
+.current{
+  border-bottom: 2px solid #707070;
 }
-.dark-yellow .slick-dots li button:before {
-  font-size: 10px;
-  color: #F9C400;
+.current-ft{
+  border-bottom: 2px solid white;
 }
-/* Dots colour for slider above */
+/* Current page above */
 /* Buttons colors must be changed on individual pages */
 .generalbtn {
-  min-width: 200px;
-  margin: 15px 9px 0;
+  min-width: 150px;
+  margin: 0 17px 17px;
   padding: 10px;
   transition: all 0.3s;
   background-color: rgba(255, 255, 255, 0.70);
@@ -73,23 +71,27 @@ body {
   cursor: pointer;
 }
 /* Buttons above */
-/* Image template */
-.full-image {
-  margin: 15px auto 0 ;
-  width:90%;
-  height: 300px;
-  background-color: #F3733D;
-}
-/* Image template above */
+
 /* Site wide settings above */
 
 /* //////////////////// Reset Code Above //////////////////// */
 
 /* Background Images */
-.hm-bk{
-    background: url(../bkgrnd/green-bk-sm.png) top right;
+/* Green */
+.hm-bg-g{
+    background: url(https://imagizer.imageshack.com/img922/3614/5oD6jz.jpg) top right;
     background-repeat: no-repeat;
   }
+/* Orange */
+.hm-bg-o{
+  background: url(https://imagizer.imageshack.com/img922/9786/kE4Qe7.jpg) top right;
+  background-repeat: no-repeat;
+}
+/* Yellow */
+.hm-bg-y{
+  background: url(https://imagizer.imageshack.com/img923/2583/eya8KW.jpg) top right;
+  background-repeat: no-repeat;
+}
 /* Background Images Above */
 
 /* Navbar */
@@ -111,6 +113,7 @@ nav {
 .logo a {
   letter-spacing: 2px;
   font-size: 30px;
+  font-family: "Montserrat", sans-serif;
 }
 .nav-links {
   display: flex;
@@ -240,13 +243,14 @@ nav {
 /* Box main and quotes-carousel main box duplicate styling */
 /* Text content within box */
   .box-main p {
-    padding: 17px;
+    padding: 0 17px 22px 17px;
     text-align: left;
   }
 /* Text content within box above */
 /* Head of box */
   .box-head {
     width: 150px;
+    margin-bottom: 20px;
   }
 /* Head of box above */
 /* Foot of box */
@@ -254,6 +258,7 @@ nav {
     width: 350px;
     margin-left: auto;
     bottom: 0;
+    
   }
 /* Foot of box above */
 
@@ -262,14 +267,14 @@ nav {
   margin:0 auto;
   width: 80%;
   height: auto;
-  padding: 8px 8px 8px 8px;
+  padding: 22px 17px 22px 17px;
   color: #707070;
 }
 .quote-head {
   margin-left: -10px;
   width: 150px;
   padding: 17px;
-  font-weight: 600;   
+  font-weight: 600;
 }
 .why-head {
   width: 150px;
@@ -289,6 +294,21 @@ nav {
   }
 /* Main content box phone above */
 /* Main content box above */
+
+/* How we work List  */
+.hww{
+  text-align: left;
+}
+
+.hww li{
+  list-style-type:disc;
+  margin-left: 80px;
+  margin-right: 80px;
+  font-size: 16px;
+}
+/* How we work above */
+
+
 
 /* Service cards carousel */ 
 .services-carousel {
@@ -328,7 +348,7 @@ nav {
 .subtitle{
   font-size: 15px;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   .subtitle{
     display: none;
   }
@@ -347,7 +367,7 @@ footer {
 }
 .footer-container-1200 {
   max-width: 1200px;
-  background-image: url(../images/BrightIcon.png);
+  background-image: url(https://imagizer.imageshack.com/img922/1550/YcSwvI.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -556,17 +576,36 @@ footer {
 /* Site map above */
 
 /* Testimonials */
-  .testimonial {
+.testimonial-start {
+  align-self:flex-start;
+  background: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  font-size: 30px;
+  padding: 0;
+  margin: 22px 0 22px 0;
+}
+  .testimonial-end {
     align-self:flex-end;
     background: none;
     box-shadow: none;
     backdrop-filter: none;
-    font-size: 40px;
-    padding: 17px 17px 0 0;
+    font-size: 30px;
+    padding: 0;
+    margin: 0 0 22px 0;
   }
   .testimonial-p {
     align-self:center;
+    margin: 0 80px 0 80px;
   }
+
+  @media(max-width:534px){
+  .testimonial-p {
+    margin: 0;
+  }
+  }
+
+/* Testimonials page above */
 
 /* Services page links */
   .serviceslinks {
@@ -576,25 +615,11 @@ footer {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 30px;
   }
   .servicesbtn:hover {
     color: #F9C400;
     box-shadow: 0 0.5em 0.5em -0.4em #F9C400;
-  }
-  .to-top {
-    position: fixed;
-    margin-left: 10px;
-    margin-top: 5px;
-    font-size:40px;
-    color: #F9C400;
-  }
-  .to-top a {
-    font-size:40px;
-    color: #F9C400;
-  }
-  #to-top {
-    height: 0.1px;
-    transform: translateY(-20px);
   }
 /* Servise page links above */
 
@@ -623,3 +648,88 @@ footer {
     }
   }
 /* Contact page above */
+
+/* Terms and conditions page */
+  .tc{
+    text-align: left;
+  }
+
+  .tc li{
+    margin: 0 20px 0 22px;
+    text-align: left;
+    list-style-type: decimal;
+    color: #F3733D;
+    font-weight: bold;
+    list-style-position:inside;
+}
+
+ .tc li p{
+   font-weight: 400;
+   color: #707070;
+ }
+
+ .tc li ol li{
+  list-style-type: lower-alpha;
+ }
+
+ .tc li ol ol li{
+  list-style-type:decimal;
+ }
+
+ @media(max-width:700px){
+  .tc ol li{
+    margin: 0 2px 0 10px;
+ }
+ .tc ol li p{
+   padding-left: 0;
+   padding-right: 0; 
+ }
+}
+
+/* Terms and conditions above */
+
+/* Privacy Policy */
+  .pp{
+    text-align: left;
+  }
+
+  .pp ol li{
+    list-style-type:disc;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 16px;
+  }
+
+  .spacing{
+    margin-bottom: 22px;
+  }
+
+  .contact-ppp{
+    margin-bottom: 22px;
+  }
+
+/* Privacy policy above */
+
+/* Quality policy */
+  .qp li{
+    list-style-type:disc;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 16px;
+  }
+  .qualitybtn:hover {
+    color: #83bc00;
+    box-shadow: 0 0.5em 0.5em -0.4em #83bc00;
+  }
+/* Quality policy above*/
+
+/* Legal */
+  .signature{
+    margin-left: Auto;
+    margin-right: 10px;
+  }
+  .signature p{
+    text-align: right;
+  }
+/* Legal */
+
