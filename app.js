@@ -40,9 +40,10 @@ window.onscroll = function() {
 // Slick carousel services (using slick.js)
 $(document).ready(() => {
   $('.services-carousel .slick').slick({
-      autoplay:true,
+      autoplay: true,
       dots: false,
-      speed: 1000,
+      autoplayspeed: 2500,
+      speed: 500,
       slidesToShow: 2,
       slidesToScroll: 2,
       prevArrow: false,
@@ -50,11 +51,12 @@ $(document).ready(() => {
       centerMode: true,
       responsive: [
           {
-              breakpoint: 700,
+              breakpoint: 550,
               settings: {
                   dots: false,
                   slidesToShow: 1,
-                  slidesToScroll: 1
+                  slidesToScroll: 1,
+                  centerMode: false,
               }
           }
       ]
@@ -66,7 +68,7 @@ $(document).ready(() => {
   $('.quotes-carousel .slick').slick({
       autoplay:true,
       dots: false,
-      speed: 1000,
+      speed: 2000,
       slidesToShow: 1,
       slidesToScroll: 1,
       prevArrow: false,
@@ -184,3 +186,55 @@ function gridGallery(a) {
 
 
 
+// Toggle services view more
+$(document).ready(function() {
+  $('#kc, #as, #ge, #scln, #hl, #bcln, #fl, #sl, #uc').hide();
+  $('#kdcbtn').on('click', function() {
+    $('#kc').show();
+    $('#as, #srvc-h').hide();
+  });
+  $('#asbtn').on('click', function() {
+    $('#as').show();
+    $('#kc, #ge, #scln, #hl, #bcln, #fl, #sl, #uc, #srvc-h').hide();
+  });
+  $('#gebtn').on('click', function() {
+    $('#ge').show();
+    $('#kc, #as, #scln, #hl, #bcln, #fl, #sl, #uc, #srvc-h').hide();
+  });
+  $('#sbtn').on('click', function() {
+    $('#scln').show();
+    $('#kc, #as, #ge, #hl, #bcln, #fl, #sl, #uc, #srvc-h').hide();
+  });
+  $('#hlbtn').on('click', function() {
+    $('#hl').show();
+    $('#kc, #as, #ge, #scln, #bcln, #fl, #sl, #uc, #srvc-h').hide();
+  });
+  $('#bbtn').on('click', function() {
+    $('#bcln').show();
+    $('#kc, #as, #ge, #scln, #hl, #fl, #sl, #uc, #srvc-h').hide();
+  });
+  $('#flbtn').on('click', function() {
+    $('#fl').show();
+    $('#kc, #as, #ge, #scln, #hl, #bcln, #sl, #uc, #srvc-h').hide();
+  });
+  $('#slbtn').on('click', function() {
+    $('#sl').show();
+    $('#kc, #as, #ge, #scln, #hl, #bcln, #fl, #uc, #srvc-h').hide();
+  });
+  $('#ucbtn').on('click', function() {
+    $('#uc').show();
+    $('#kc, #as, #ge, #scln, #hl, #bcln, #fl, #sl, #srvc-h').hide();
+  });
+  $('#srvcbtn').on('click', function() {
+    $('#srvc-h').show();
+    $('#kc, #as, #ge, #scln, #hl, #bcln, #fl, #sl, #uc').hide();
+  });
+  
+  
+  //below is the scroll to top function
+  $('#kdcbtn, #asbtn, #srvcbtn, #gebtn, #sbtn, #hlbtn, #bbtn, #flbtn, #slbtn, #ucbtn').click(function(){
+    $('html, body').animate({scrollTop : 0},100);
+    return false;
+  });
+  
+});

@@ -27,7 +27,7 @@ body, a {
 /* Reset styles above */
 /* Home container */
 .home-container {
-    margin: 85px auto 0 auto;
+    margin: 95px auto 0 auto;
     text-align: center;
     max-width:1200px;
   }
@@ -65,6 +65,11 @@ body {
   transition: all 0.3s;
   background-color: rgba(255, 255, 255, 0.70);
   box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.35);
+}
+@media screen and (max-width: 425px) {
+  .generalbtn {
+    width: 80%;
+  }
 }
 .generalbtn:hover {
   transform: translateY(-0.25em);
@@ -235,7 +240,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     justify-content: center;
-    margin: 15px auto 0 auto;
+    margin: 30px auto 0 auto;
     width: 90%;
     height: auto;
     line-height: 1.25;
@@ -249,7 +254,7 @@ nav {
 /* Text content within box above */
 /* Head of box */
   .box-head {
-    width: 150px;
+    width: 350px;
     margin-bottom: 20px;
   }
 /* Head of box above */
@@ -283,13 +288,16 @@ nav {
 }
 /* Quote Carousel Above */
 /* Main content box phone */
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 425px) {
     .box-head {
       width:auto;
     }  
     .box-foot {
       margin-left: 0;
       width:auto;
+    }
+    .why-head {
+      width: auto;   
     }
   }
 /* Main content box phone above */
@@ -312,16 +320,15 @@ nav {
 
 /* Service cards carousel */ 
 .services-carousel {
-  margin: 15px auto;
+  margin: 30px auto;
 }
 .slick-slide {
   margin: 0 10px;
 }
 .services-card {
-  width: 300px;
   position: relative;
   overflow: hidden;
-  background-image:contain;
+  background-image: scale-down;
 }
 .services-card .services-card-text {
   bottom: 0;
@@ -348,9 +355,25 @@ nav {
 .subtitle{
   font-size: 15px;
 }
-@media screen and (max-width: 750px) {
+
+@media screen and (max-width: 900px) {
+  .services-card img{
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .subtitle{
     display: none;
+  }
+  .services-card img{
+    height:260px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .services-card img{
+    height:300px;
   }
 }
 /* Service cards carousel above */
@@ -363,21 +386,21 @@ nav {
 footer {
   width: 100%;
   background-color: #707070;
-  height: auto;
 }
 .footer-container-1200 {
+  height: auto;
   max-width: 1200px;
   background-image: url(https://imagizer.imageshack.com/img922/1550/YcSwvI.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position:center;
+  background-size: 50%;
 }
 .footer-container-90 {
   width:90%;
   display:grid;
   grid-template-columns: 4fr 7fr 1fr;
   align-items:center;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 /* Footer nav links */
 .footer-links li {
@@ -410,7 +433,7 @@ footer {
   width: 100%;
   text-align: center;
   font-size:8px;
-  padding-bottom: 4px;
+  padding-bottom: 28px;
   background-color: #707070;
 }
 @media screen and (max-width: 500px) {
@@ -610,7 +633,7 @@ footer {
 /* Services page links */
   .serviceslinks {
     margin: 0 auto;
-    max-width:760px;
+    max-width: 760px;
     display: flex;
     align-items: center;
     justify-content: center;
