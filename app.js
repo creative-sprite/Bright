@@ -25,17 +25,17 @@ const navSlide = () => {
 
 navSlide();
 
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-70px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+// /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementById("navbar").style.top = "0";
+//   } else {
+//     document.getElementById("navbar").style.top = "-70px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
 
 // Slick carousel services (using slick.js)
 $(document).ready(() => {
@@ -191,7 +191,7 @@ $(document).ready(function() {
   $('#kc, #as, #ge, #scln, #hl, #bcln, #fl, #sl, #uc').hide();
   $('#kdcbtn').on('click', function() {
     $('#kc').show();
-    $('#as, #srvc-h').hide();
+    $('#as, #ge, #scln, #hl, #bcln, #fl, #sl, #uc, #srvc-h').hide();
   });
   $('#asbtn').on('click', function() {
     $('#as').show();

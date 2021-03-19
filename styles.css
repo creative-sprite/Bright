@@ -644,6 +644,27 @@ footer {
     color: #F9C400;
     box-shadow: 0 0.5em 0.5em -0.4em #F9C400;
   }
+  .srvcs{
+    display: flex;
+    align-items: center;
+    height:150px;
+  }
+  @media(max-width:800px){
+    .srvcs{
+      height:200px;
+    }
+  }
+  @media(max-width:600px){
+    .srvcs{
+      height:250px;
+    }
+  }
+  @media(max-width:400px){
+    .srvcs{
+      height:320px;
+    }
+  }
+
 /* Servise page links above */
 
 /* Contact page */
