@@ -238,3 +238,31 @@ $(document).ready(function() {
   });
   
 });
+
+// on loading contact form hide google confirm page | show bright confirmation page
+var loadCounter = 0;
+$('.confirmation-message').hide();
+    var loaded = function() {
+        loadCounter += 1;
+        if (loadCounter === 2) {
+            $(window).on("load");
+            $('.iframewrapper, #iframe-contact, .iframe-acc-wrapper, #iframe-acc-form').hide();
+            $('.confirmation-message').show();
+        }
+    }
+
+// on loading contact form hide google confirm page | show bright confirmation page
+// var loadCounter_acc = 0;
+//     var accloaded = function() {
+//         loadCounter_acc += 1;
+//         if (loadCounter_acc === 2) {
+//             $(window).on("load");
+//             $('.iframe-acc-wrapper, #iframe-acc-form').hide();
+//             $('.confirmation-message').show();
+//         }
+//     }
+
+
+
+
+    

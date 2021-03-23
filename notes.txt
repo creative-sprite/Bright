@@ -10,3 +10,8 @@ colours
 #F3733D - orange
 #707070 - grey
 #83BC00 - green
+
+
+
+
+onload = "window.parent.scrollTo(0,0)"
