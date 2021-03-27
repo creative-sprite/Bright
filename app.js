@@ -265,4 +265,56 @@ $('.confirmation-message').hide();
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+// Toggle links & resources view more
+$(document).ready(function() {
+  $('#aff, #cs, #ge, #qp, #af, #tcs, #pp').hide();
+  $('#affbtn').on('click', function() {
+    $('#aff').show();
+    $('#cs, #qp, #af, #tcs, #pp, #lr').hide();
+  });
+  $('#csbtn').on('click', function() {
+    $('#cs').show();
+    $('#aff, #qp, #af, #tcs, #pp, #lr').hide();
+  });
+  $('#qpbtn').on('click', function() {
+    $('#qp').show();
+    $('#aff, #cs, #af, #tcs, #pp, #lr').hide();
+  });
+  $('#afbtn').on('click', function() {
+    $('#af').show();
+    $('#aff, #cs, #qp, #tcs, #pp, #lr').hide();
+  });
+  $('#tcsbtn').on('click', function() {
+    $('#tcs').show();
+    $('#aff, #cs, #qp, #af, #pp, #lr').hide();
+  });
+  $('#ppbtn').on('click', function() {
+    $('#pp').show();
+    $('#aff, #cs, #qp, #af, #tcs, #lr').hide();
+  });
+  $('#lrbtn').on('click', function() {
+    $('#lr').show();
+    $('#aff, #cs, #qp, #af, #tcs, #pp').hide();
+  });
+  
+  
+  //below is the scroll to top function | links & resources page
+  $('#affbtn, #csbtn, #qpbtn, #afbtn, #tcsbtn, #ppbtn, #lrbtn').click(function(){
+    $('html, body').animate({scrollTop : 0},100);
+    return false;
+  });
+  
+});
+

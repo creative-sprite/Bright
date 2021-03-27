@@ -77,6 +77,27 @@ body {
 }
 /* Buttons above */
 
+/* Survey button */
+.surveybtn {
+  min-width: 150px;
+  margin: 0 17px 17px;
+  padding: 20px;
+  transition: all 0.3s;
+  background-color: #F3733D;
+  color:white;
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.35);
+}
+@media screen and (max-width: 425px) {
+  .surveybtn {
+    width: 80%;
+  }
+}
+.surveybtn:hover {
+  transform: translateY(-0.25em);
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.70);
+}
+
 /* Site wide settings above */
 
 /* //////////////////// Reset Code Above //////////////////// */
@@ -672,6 +693,10 @@ footer {
     color: #F3733D;
     box-shadow: 0 0.5em 0.5em -0.4em #F3733D;
   }
+  .acfbtn:hover {
+    color: #83bc00;
+    box-shadow: 0 0.5em 0.5em -0.4em #83bc00;
+  }
   .contact-container {
     padding: 5px 0 20px 0;
   }
@@ -770,24 +795,6 @@ footer {
 }
 /* Height adjustment for accounts form */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Change height for | contact form */
 @media(max-width:510px){
   .iframewrapper{
@@ -861,18 +868,15 @@ footer {
   .pp{
     text-align: left;
   }
-
   .pp ol li{
     list-style-type:disc;
     margin-left: 50px;
     margin-right: 50px;
     font-size: 16px;
   }
-
   .spacing{
     margin-bottom: 22px;
   }
-
   .contact-ppp{
     margin-bottom: 22px;
   }
@@ -902,3 +906,18 @@ footer {
   }
 /* Legal */
 
+/* Service pages */
+
+/* Service page list */
+.cln-list li{
+  text-align: left;
+  list-style-type:disc;
+  margin: 0 7% 22px 7%;
+}
+
+/* Affiliations / Accreditations */
+.aff-logos{
+  margin: 0 17px 17px 17px;
+  max-width: 175px;
+  width:25%;
+}
