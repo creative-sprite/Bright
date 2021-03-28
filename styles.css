@@ -105,17 +105,18 @@ body {
 /* Background Images */
 /* Green */
 .hm-bg-g{
-    background: url(https://imagizer.imageshack.com/img922/3614/5oD6jz.jpg) top right;
+    background: url(https://drive.google.com/uc?id=1FGd92VeHoIBcx_I1vS4d9NOa3rmhYqE3) top right;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 /* Orange */
 .hm-bg-o{
-  background: url(https://imagizer.imageshack.com/img922/9786/kE4Qe7.jpg) top right;
+  background: url(https://drive.google.com/uc?id=12_ECytDwpkU0RuQTStB9ERNMMDrsa-27) top right;
   background-repeat: no-repeat;
 }
 /* Yellow */
 .hm-bg-y{
-  background: url(https://imagizer.imageshack.com/img923/2583/eya8KW.jpg) top right;
+  background: url(https://drive.google.com/uc?id=1QyOyg14yRvJ7aVPDpr352KTkhONV8edl) top right;
   background-repeat: no-repeat;
 }
 /* Background Images Above */
@@ -411,7 +412,7 @@ footer {
 .footer-container-1200 {
   height: auto;
   max-width: 1200px;
-  background-image: url(https://imagizer.imageshack.com/img922/1550/YcSwvI.png);
+  background-image: url(https://drive.google.com/uc?id=1nTJZJhECEVnKPo23roQjxSq3kpXngq6T);
   background-repeat: no-repeat;
   background-position:center;
   background-size: 50%;
