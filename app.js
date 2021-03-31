@@ -181,7 +181,7 @@ function gridGallery(a) {
   if (a.columnWidth) {
     selector.style.setProperty("--column-width", a.columnWidth + "px");
   }
-}
+};
 // Gallery above
 
 
@@ -309,12 +309,18 @@ $(document).ready(function() {
     $('#aff, #cs, #qp, #af, #tcs, #pp').hide();
   });
   
-  
   //below is the scroll to top function | links & resources page
   $('#affbtn, #csbtn, #qpbtn, #afbtn, #tcsbtn, #ppbtn, #lrbtn').click(function(){
     $('html, body').animate({scrollTop : 0},100);
     return false;
   });
-  
 });
 
+
+
+
+
+// Activate on Scroll stats
+AOS.init({
+  duration: 1200,
+})

@@ -105,18 +105,18 @@ body {
 /* Background Images */
 /* Green */
 .hm-bg-g{
-    background: url(https://drive.google.com/uc?id=1FGd92VeHoIBcx_I1vS4d9NOa3rmhYqE3) top right;
+    background: url(https://imagizer.imageshack.com/img923/6249/5Lxg5u.jpg) top right;
     background-repeat: no-repeat;
     background-size: cover;
   }
 /* Orange */
 .hm-bg-o{
-  background: url(https://drive.google.com/uc?id=12_ECytDwpkU0RuQTStB9ERNMMDrsa-27) top right;
+  background: url(https://imagizer.imageshack.com/img924/9157/QYwK9o.jpg) top right;
   background-repeat: no-repeat;
 }
 /* Yellow */
 .hm-bg-y{
-  background: url(https://drive.google.com/uc?id=1QyOyg14yRvJ7aVPDpr352KTkhONV8edl) top right;
+  background: url(https://imagizer.imageshack.com/img924/4866/EyX964.jpg) top right;
   background-repeat: no-repeat;
 }
 /* Background Images Above */
@@ -412,7 +412,7 @@ footer {
 .footer-container-1200 {
   height: auto;
   max-width: 1200px;
-  background-image: url(https://drive.google.com/uc?id=1nTJZJhECEVnKPo23roQjxSq3kpXngq6T);
+  background-image: url(https://imagizer.imageshack.com/img924/1994/0HhxgT.png);
   background-repeat: no-repeat;
   background-position:center;
   background-size: 50%;
@@ -921,4 +921,87 @@ footer {
   margin: 0 17px 17px 17px;
   max-width: 175px;
   width:25%;
+}
+
+/* Meet the team */
+.meet-team img{
+  width: 300px;
+  margin: 0 20px 20px;
+}
+.meet-team{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.meet-team p{
+  padding: 0;
+}
+@media(max-width:648px){
+  .meet-team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .meet-team p{
+    margin-bottom: 20px;
+    text-align: center;
+  }  
+ }
+ @media(max-width:400px){
+  .meet-team img{
+    max-width: 80%;
+  }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Stats gauges */
+.container-stats {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ .gauge {
+  max-width:250px;
+  margin: 0 10px 0 10px;
+}
+.gauge text {
+  margin: 0 auto;
+}
+.gauge p {
+  color: #83BC00;
+  font-size: 20px;
+  margin-top: -30px;
+}
+ .cs_gauge_feedback {
+  stroke-dasharray:1463;
+  stroke-dashoffset:1463;
+  animation: draw-gauge 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes draw-gauge {
+  0% {
+    stroke-dashoffset:1463;
+    stroke:#F3733D;
+  }
+  100% {
+    stroke-dashoffset:40.964;
+    stroke:#83bc00;
+  }
+}
+.st2{
+  fill:#83bc00;
 }
