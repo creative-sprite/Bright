@@ -124,7 +124,8 @@ body {
 /* Navbar */
 nav, .mobile-menu {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  background-color:white;
   backdrop-filter: blur(10px) contrast(20%) brightness(145%);
   box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
