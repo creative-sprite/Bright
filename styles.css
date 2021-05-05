@@ -124,9 +124,11 @@ body {
 /* Navbar */
 nav, .mobile-menu {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(10px) contrast(20%) brightness(145%);
-  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.70);
+  backdrop-filter: blur(10px) contrast(40%) brightness(140%);
+  -webkit-backdrop-filter:blur(10px) contrast(40%) brightness(140%);
+  box-shadow: 3px 3px 10px 3px rgba(58, 58, 58, 0.5);
   width: 100%;
   top: 0;
   position: fixed;
@@ -246,28 +248,30 @@ nav {
 /* Main content box */
 /* Box head a foot duplicate styling */
 .box-head, .box-foot, .quote-head, .why-head {
-    background-color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.80);
-    backdrop-filter: blur(5px) contrast(20%) brightness(100%);
-    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.35);
-    text-align: center;
-    padding: 17px;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.70);
+  backdrop-filter: blur(5px) contrast(30%) brightness(140%);
+  -webkit-backdrop-filter:blur(5px) contrast(30%) brightness(140%);
+  box-shadow: 3px 3px 10px 3px rgba(58, 58, 58, 0.5);
+  text-align: center;
+  padding: 17px;
 }
 /* Box head a foot duplicate styling above*/
 /* Box main and quotes-carousel main box duplicate styling */
 .box-main, .quotes-carousel, .why-carousel {
-    background-color: rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.80);
-    backdrop-filter: blur(5px) contrast(20%) brightness(100%);
-    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    justify-content: center;
-    margin: 30px auto 0 auto;
-    width: 90%;
-    height: auto;
-    line-height: 1.25;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.70);
+  backdrop-filter: blur(5px) contrast(30%) brightness(140%);
+  -webkit-backdrop-filter:blur(5px) contrast(30%) brightness(140%);
+  box-shadow: 3px 3px 10px 3px rgba(58, 58, 58, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: center;
+  margin: 30px auto 0 auto;
+  width: 90%;
+  height: auto;
+  line-height: 1.25;
 }
 /* Box main and quotes-carousel main box duplicate styling */
 /* Text content within box */
@@ -358,8 +362,10 @@ nav {
   bottom: 0;
   position: absolute;
   height: 25%;
+  background-color: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.70);
-  backdrop-filter: blur(10px) contrast(20%) brightness(110%);
+  backdrop-filter: blur(30px) contrast(20%) brightness(140%);
+  -webkit-backdrop-filter:blur(20px) contrast(20%) brightness(140%);
   display: flex;
   width: 100%;
   justify-content: center;
@@ -459,6 +465,7 @@ footer {
   font-size:8px;
   padding-bottom: 28px;
   background-color: #707070;
+  color: white;
 }
 @media screen and (max-width: 500px) {
   .footer-links {
@@ -547,9 +554,11 @@ footer {
   background:var(--secondary-color);
 }
 .gallery-close, .gallery-close, .gallery-next, .gallery-prev {
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px) contrast(20%) brightness(110%);
-  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.35);
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(5px) contrast(30%) brightness(140%);
+  -webkit-backdrop-filter:blur(5px) contrast(30%) brightness(140%);
+  box-shadow: 3px 3px 10px 3px rgba(58, 58, 58, 0.5);
 }
 .gallery-close{
   border-radius: 100%;
@@ -623,27 +632,29 @@ footer {
 /* Site map above */
 
 /* Testimonials */
-.testimonial-start {
+  .testimonial-start {
   align-self:flex-start;
   background: none;
   box-shadow: none;
   backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   font-size: 30px;
   padding: 0;
-  margin: 22px 0 22px 0;
-}
+  margin: 22px 0 22px 15px;
+  }
   .testimonial-end {
-    align-self:flex-end;
-    background: none;
-    box-shadow: none;
-    backdrop-filter: none;
-    font-size: 30px;
-    padding: 0;
-    margin: 0 0 22px 0;
+  align-self:flex-end;
+  background: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  font-size: 30px;
+  padding: 0;
+  margin: 0 15px 22px 0;
   }
   .testimonial-p {
-    align-self:center;
-    margin: 0 80px 0 80px;
+  align-self:center;
+  margin: 0 80px 0 80px;
   }
 
   @media(max-width:534px){
@@ -978,7 +989,7 @@ footer {
 }
  .gauge {
   max-width:250px;
-  margin: 0 10px 0 10px;
+  margin: 22px 10px 0 10px;
 }
 .gauge text {
   margin: 0 auto;

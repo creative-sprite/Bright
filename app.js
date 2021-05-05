@@ -252,21 +252,6 @@ $('.confirmation-message').hide();
         }
     }
 
-// on loading contact form hide google confirm page | show bright confirmation page
-// var loadCounter_acc = 0;
-//     var accloaded = function() {
-//         loadCounter_acc += 1;
-//         if (loadCounter_acc === 2) {
-//             $(window).on("load");
-//             $('.iframe-acc-wrapper, #iframe-acc-form').hide();
-//             $('.confirmation-message').show();
-//         }
-//     }
-
-
-
-
-
 
 
 
@@ -323,9 +308,19 @@ $(document).ready(function() {
 
 
 
+//Trigger events when objects scroll into view
 
+$(window).scroll(function () {
+  var topOfWindow = $(window).scrollTop(),
+      bottomOfWindow = topOfWindow + $(window).height();
 
-// Activate on Scroll stats
-AOS.init({
-  duration: 1200,
-})
+  $('.cs_gauge_feedback').each(function () {
+      var imagePos = $(this).offset().top;
+
+      if(imagePos <= bottomOfWindow && imagePos >= topOfWindow){
+          $(this).addClass('draw-gauge');
+      }else{
+          $(this).removeClass('draw-gauge');
+      }
+  });
+});
