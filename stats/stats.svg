@@ -1,0 +1,13 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 482 543.9" xml:space="preserve">
+  <style>
+    .st2{fill:#707070}
+  </style>
+  <circle id="blank_x5F_bar" cx="241" cy="241" r="233" fill="none" stroke="#707070" stroke-width="16" stroke-miterlimit="10"/>
+  <circle id="stats_x5F_bar" cx="241" cy="241" r="233" fill="none" stroke="#83bc00" stroke-width="10" stroke-miterlimit="10"/>
+  <text transform="translate(83.968 275.244)" class="st2" font-size="117.18" font-family="Roboto-Regular">
+    97.2%
+  </text>
+  <text transform="translate(40.759 532.914)" class="st2" font-size="44" font-family="MyriadPro-Regular">
+    Customer Satisfaction
+  </text>
+</svg>
