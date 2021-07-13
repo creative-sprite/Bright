@@ -728,9 +728,9 @@ footer {
     height: 1630px;
     margin-top: 20px;
   }
-  
+
   #iframe-contact{
-    height:1660px;
+    height:1661px;
 }
 
   .iframe-acc-wrapper {
@@ -743,7 +743,7 @@ footer {
   }
 
 /* Change height for | accounts form */
-@media(max-width:710px){
+ @media(max-width:710px){
   .iframe-acc-wrapper{
     height: 2780px;
   }
@@ -810,7 +810,7 @@ footer {
 /* Height adjustment for accounts form */
 
 /* Change height for | contact form */
-@media(max-width:510px){
+ @media(max-width:510px){
   .iframewrapper{
     height: 1680px;
   }
@@ -838,6 +838,11 @@ footer {
   }
 }
 /* Contact page | Account form page above */
+
+
+
+
+
 
 /* Terms and conditions page */
   .tc{
@@ -894,7 +899,10 @@ footer {
   .contact-ppp{
     margin-bottom: 22px;
   }
-
+  .privacybtn:hover {
+    color: #83bc00;
+    box-shadow: 0 0.5em 0.5em -0.4em #83bc00;
+  }
 /* Privacy policy above */
 
 /* Quality policy */
@@ -948,6 +956,7 @@ footer {
 }
 .meet-team p{
   padding: 0;
+
 }
 @media(max-width:648px){
   .meet-team{
@@ -980,41 +989,3 @@ footer {
 
 
 
-/* Stats gauges */
-.container-stats {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
- .gauge {
-  max-width:250px;
-  margin: 22px 10px 0 10px;
-}
-.gauge text {
-  margin: 0 auto;
-}
-.gauge p {
-  color: #83BC00;
-  font-size: 20px;
-  margin-top: -30px;
-}
- .cs_gauge_feedback {
-  stroke-dasharray:1463;
-  stroke-dashoffset:1463;
-  animation: draw-gauge 1.5s ease-in-out;
-  animation-fill-mode: forwards;
-}
-@keyframes draw-gauge {
-  0% {
-    stroke-dashoffset:1463;
-    stroke:#F3733D;
-  }
-  100% {
-    stroke-dashoffset:40.964;
-    stroke:#83bc00;
-  }
-}
-.st2{
-  fill:#83bc00;
-}

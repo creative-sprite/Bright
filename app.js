@@ -265,42 +265,38 @@ $('.confirmation-message').hide();
 
 // Toggle links & resources view more
 $(document).ready(function() {
-  $('#aff, #cs, #ge, #qp, #af, #tcs, #pp, #mt').hide();
+  $('#aff, #ge, #qp, #af, #tcs, #pp, #mt').hide();
   $('#affbtn').on('click', function() {
     $('#aff').show();
-    $('#cs, #qp, #af, #tcs, #pp, #lr, #mt').hide();
-  });
-  $('#csbtn').on('click', function() {
-    $('#cs').show();
-    $('#aff, #qp, #af, #tcs, #pp, #lr, #mt').hide();
+    $('#qp, #af, #tcs, #pp, #lr, #mt').hide();
   });
   $('#qpbtn').on('click', function() {
     $('#qp').show();
-    $('#aff, #cs, #af, #tcs, #pp, #lr, #mt').hide();
+    $('#aff, #af, #tcs, #pp, #lr, #mt').hide();
   });
   $('#afbtn').on('click', function() {
     $('#af').show();
-    $('#aff, #cs, #qp, #tcs, #pp, #lr, #mt').hide();
+    $('#aff, #qp, #tcs, #pp, #lr, #mt').hide();
   });
   $('#tcsbtn').on('click', function() {
     $('#tcs').show();
-    $('#aff, #cs, #qp, #af, #pp, #lr, #mt').hide();
+    $('#aff, #qp, #af, #pp, #lr, #mt').hide();
   });
   $('#ppbtn').on('click', function() {
     $('#pp').show();
-    $('#aff, #cs, #qp, #af, #tcs, #lr, #mt').hide();
+    $('#aff, #qp, #af, #tcs, #lr, #mt').hide();
   });
   $('#mtbtn').on('click', function() {
     $('#mt').show();
-    $('#aff, #cs, #qp, #af, #tcs, #pp, #lr').hide();
+    $('#aff, #qp, #af, #tcs, #pp, #lr').hide();
   });
   $('#lrbtn').on('click', function() {
     $('#lr').show();
-    $('#aff, #cs, #qp, #af, #tcs, #pp, #mt').hide();
+    $('#aff, #qp, #af, #tcs, #pp, #mt').hide();
   });
   
   //below is the scroll to top function | links & resources page
-  $('#affbtn, #csbtn, #qpbtn, #afbtn, #tcsbtn, #ppbtn, #lrbtn').click(function(){
+  $('#affbtn, #qpbtn, #afbtn, #tcsbtn, #ppbtn, #lrbtn').click(function(){
     $('html, body').animate({scrollTop : 0},100);
     return false;
   });
@@ -308,19 +304,4 @@ $(document).ready(function() {
 
 
 
-//Trigger events when objects scroll into view
 
-$(window).scroll(function () {
-  var topOfWindow = $(window).scrollTop(),
-      bottomOfWindow = topOfWindow + $(window).height();
-
-  $('.cs_gauge_feedback').each(function () {
-      var imagePos = $(this).offset().top;
-
-      if(imagePos <= bottomOfWindow && imagePos >= topOfWindow){
-          $(this).addClass('draw-gauge');
-      }else{
-          $(this).removeClass('draw-gauge');
-      }
-  });
-});
